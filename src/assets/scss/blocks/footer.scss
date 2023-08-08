@@ -1,0 +1,129 @@
+.footer {
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+
+  &--top {
+    align-items: start;
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    align-items: start;
+  }
+}
+
+.footer__subscribe {
+  display: flex;
+  align-items: center;
+  height: 102px;
+  position: relative;
+
+  box-shadow: $drop-shadow;
+
+  @include media-breakpoint-down(sm) {
+    align-items: start;
+    height: 132px;
+    padding-top: 14px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+  }
+}
+
+.footer__subscribe-text {
+  max-width: 240px;
+  margin-right: 9px;
+
+  @include text-18-bd();
+  line-height: normal;
+
+  @include media-breakpoint-down(lg) {
+    max-width: 190px;
+  }
+
+  @include media-breakpoint-down(md) {
+    max-width: 160px;
+
+    @include text-16-bd();
+    line-height: normal;
+  }
+
+  @include media-breakpoint-down(sm) {
+    max-width: 140px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-top: 15px;
+  }
+}
+
+.footer__nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: $bg-light-grey;
+}
+
+.footer__nav-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: -20px;
+  }
+}
+
+.footer__column {
+  &--first {
+    max-width: 262px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 184px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      max-width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.footer__info {
+  @include text-14-reg();
+  line-height: 22px;
+  color: $text-60;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+  margin-bottom: 188px;
+
+  box-shadow: $small-shadow;
+}
+
+.footer__copyright-link {
+  display: block;
+
+  @include text-14-bd();
+  line-height: 20px;
+  color: $text-60;
+  text-decoration-line: underline;
+}
+
+.footer__copyright-text {
+  @include text-14-reg();
+  line-height: 20px;
+  color: $text-60;
+}

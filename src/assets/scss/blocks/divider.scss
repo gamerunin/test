@@ -1,0 +1,85 @@
+.divider {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+
+  background-color: $stroke;
+
+  &--text {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
+  &--header {
+    height: 92px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    background-color: $bg-light-grey;
+
+    @include media-breakpoint-down(lg) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  &--header-short {
+    margin-left: 10px;
+  }
+
+  &--header-long {
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+
+  &--hide {
+    width: 0;
+  }
+
+  &--footer {
+    height: 102px;
+    margin-left: 49px;
+    margin-right: 49px;
+
+    background-color: $bg-light-grey;
+
+    @include media-breakpoint-down(lg) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &--footer-nav {
+    height: 290px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    background-color: $stroke;
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  &--horizontal {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: $stroke;
+  }
+}

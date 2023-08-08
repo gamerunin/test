@@ -1,0 +1,50 @@
+.preheader {
+  position: relative;
+  min-height: 509px;
+
+  background-color: $bg-light-grey;
+
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 50px;
+  }
+}
+
+.preheader__title {
+  margin: 10px 0 10px;
+
+  @include text-42-bd();
+
+  &--green {
+    color: $text-green;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 32px;
+  }
+}
+
+.preheader__text {
+  @include text-16-reg();
+  color: $text-60;
+}
+
+.preheader__notice {
+  margin-top: 5px;
+  margin-bottom: 30px;
+
+  @include text-16-reg-italic();
+}
+
+.preheader__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preheader__img {
+  margin-top: -62px;
+  margin-left: 46px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0 20px;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+
+  @include text-16-reg();
+  color: $text-60;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 6.25px;
+    height: 10px;
+    margin: 0 8px;
+
+    background: url("../img/arrow.svg");
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}

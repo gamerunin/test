@@ -1,0 +1,105 @@
+.btn {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  border: 1px solid $primary;
+  border-radius: 26px;
+  text-decoration: none;
+
+  transition: background-color .1s linear, color .1s linear;
+
+  @include text-14-bd();
+  background: $white;
+  cursor: pointer;
+
+
+  &:hover {
+    background: lighten($primary, 50%);
+  }
+
+  &--header {
+    max-width: 214px;
+    height: 52px;
+
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+  }
+
+  &--white {
+    border-radius: 26px;
+
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  &--next {
+    min-width: 332px;
+    height: 70px;
+    border-radius: 35px;
+    padding-right: 72px;
+
+    @include text-16-bd();
+    box-shadow: $btn-shadow;
+    text-transform: uppercase;
+    background: $btn-gradient;
+    color: $white;
+
+    transition: none;
+
+    &:hover {
+      background: lighten($primary, 5%);
+    }
+  }
+
+  &--subscribe {
+    min-width: 157px;
+    height: 52px;
+    justify-content: center;
+
+    @include text-16-bd-lt();
+    background: $btn-gradient;
+    color: $white;
+
+    transition: none;
+
+    &:hover {
+      background: lighten($primary, 5%);
+    }
+
+    @include media-breakpoint-down(md) {
+      @include text-14-bd();
+      color: $white;
+    }
+  }
+
+  &--complete {
+    background: linear-gradient(90deg, #7b7b7b 0%, #333333 100%);
+
+    &:hover {
+      background: lighten(#333333, 5%);
+    }
+
+    &:disabled {
+      &:hover {
+        background: linear-gradient(90deg, #7b7b7b 0%, #333333 100%);
+      }
+    }
+  }
+}
+
+.btn__arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+
+  background-color: $white;
+
+  background: $white url("../img/arrow-point-to-right.svg") no-repeat center;
+}

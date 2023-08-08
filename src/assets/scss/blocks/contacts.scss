@@ -1,0 +1,30 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include text-16-reg();
+  text-decoration: none;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    justify-content: center;
+  }
+}
+
+.contacts__item-text {
+  margin-left: 14px;
+
+  @include text-16-reg();
+  color: $text-60;
+}

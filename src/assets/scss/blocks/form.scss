@@ -1,0 +1,31 @@
+.form {
+  margin-top: 15px;
+}
+
+.form__group {
+  display: flex;
+  align-items: start;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &--center {
+    justify-content: center;
+  }
+}
+
+.form__group-checkbox {
+  accent-color: #649f27;
+  color: white;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.form__group-label {
+  margin-left: 10px;
+  max-width: 80%;
+
+  @include text-14-reg();
+  color: $text-60;
+}

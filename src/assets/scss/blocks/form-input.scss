@@ -1,0 +1,17 @@
+.form-input {
+  width: 100%;
+  padding: 14px 30px;
+
+  border: 1px solid $primary;
+  border-radius: $border-radius-btn;
+
+  @include text-16-bd-lt();
+
+  &::placeholder {
+    color: $text-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

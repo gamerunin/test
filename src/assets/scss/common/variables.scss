@@ -1,0 +1,58 @@
+/**
+ * Colors
+ */
+$primary: #76B926;
+$alert: #E34C4C;
+$white: #FFFFFF;
+$stroke: #DFDFDF;
+
+/**
+ * BG Colors
+ */
+$bg-green: #6EB744;
+$bg-dark-green: #62A53C;
+$bg-light-grey: #F4F4F4;
+$bg-box-grey: #EDEEF0;
+
+/**
+ * Text Colors
+ */
+$text-primary: #37454A;
+$text-green: #76B72A;
+$text-60: rgba($text-primary, 0.60);
+$text-paragraph: rgba($text-primary, 0.90);
+
+/**
+ * Shadow
+ */
+$circle-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.40) inset;
+$btn-shadow: 0px 10px 20px 0px rgba(132, 199, 55, 0.30);
+$small-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+$small-shadow-down: 0px -4px 8px 0px rgba(0, 0, 0, 0.10);
+$drop-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.10);
+
+/**
+ * Gradient
+ */
+$btn-gradient: linear-gradient(90deg, #6CB644 0%, #82CA2C 100%);
+
+/**
+ * Border Radius
+ */
+$border-radius-button: 35px;
+$border-radius-m: 30px;
+$border-radius-btn: 26px;
+$border-radius-s2: 20px;
+$border-radius-l: 15px;
+$border-radius-img: 10px;
+$border-radius-box: 8px;
+
+/**
+ * Container widths
+ */
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px
+);

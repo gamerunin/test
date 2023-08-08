@@ -1,0 +1,38 @@
+.reduction {
+  width: 21%;
+
+  @include media-breakpoint-down(lg) {
+    width: 18%;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.reduction__icon {
+  display: inline-block;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.reduction__title {
+  white-space: nowrap;
+
+  @include text-16-bd();
+  color: $primary;
+  line-height: normal;
+
+  transition: color .1s linear;
+}
+
+.reduction__subtitle {
+  white-space: nowrap;
+
+  @include text-14-light();
+  color: $primary;
+
+  transition: color .1s linear;
+}

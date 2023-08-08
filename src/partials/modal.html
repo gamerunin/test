@@ -1,0 +1,32 @@
+<!-- Modal -->
+<div class="modal fade" id="request-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal__content">
+
+         <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+           <span class="modal__close-icon" aria-hidden="true">&times;</span>
+         </button>
+
+        <div class="modal__title">
+            Записаться на проверку зрения
+        </div>
+
+        <form class="form" action="/" method="post">
+            <div class="form__group">
+                <input type="email" class="form-input" name="user-email" placeholder="Ваш е-майл" required>
+            </div>
+            <div class="form__group">
+                <input type="tel" class="form-input" name="user-phone" placeholder="Ваш телефон" required>
+            </div>
+            <div class="form__group form__group--center">
+                <input class="form__group-checkbox" type="checkbox" name="user-news" id="checkbox-news">
+                <label class="form__group-label" for="checkbox-news">Я хочу получать информацию о новостях и акциях компании</label>
+            </div>
+            <div class="form__group form__group--center">
+                <button type="submit" class="btn btn--subscribe">Отправить</button>
+            </div>
+        </form>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

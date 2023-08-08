@@ -1,0 +1,128 @@
+/**
+ * Text mixins
+ */
+@mixin text-42-bd() {
+  font-family: inherit;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  color: $text-primary;
+}
+
+@mixin text-h3() {
+  font-family: inherit;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  color: $text-primary;
+}
+
+@mixin text-20-bd() {
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: $text-primary;
+}
+
+@mixin text-18-bd() {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: $text-primary;
+}
+
+@mixin text-18-reg() {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-primary;
+}
+
+@mixin text-16-bd() {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  color: $text-primary;
+}
+
+@mixin text-16-bd-lt() {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: $text-primary;
+}
+
+@mixin text-16-reg() {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: $text-primary;
+}
+
+@mixin text-16-reg-italic() {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22px;
+  color: $text-primary;
+}
+
+@mixin text-14-bd() {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  color: $text-primary;
+}
+
+@mixin text-14-reg() {
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: $text-primary;
+}
+
+@mixin text-14-light() {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: $text-primary;
+}
+
+@mixin text-18-bd() {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: $text-primary;
+}
+
+@mixin text-12-bd() {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: $text-primary;
+}

@@ -1,0 +1,28 @@
+.modal__content {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+
+    background-color: $white;
+}
+
+.modal__close {
+    position: absolute;
+    top: 12px;
+    font-size: 22px;
+    right: 6px;
+    z-index: 1;
+
+    width: 35px;
+    padding: 0;
+    border: 0;
+
+    background: none;
+    cursor: pointer;
+}
+
+.modal__title {
+   @include text-20-bd();
+    color: $primary;
+    text-align: center;
+}
