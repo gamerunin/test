@@ -6,6 +6,10 @@
     border: 1px solid $primary;
     border-radius: 26px;
 
+    @media (max-width: 350px) {
+        padding: 14px 12px;
+    }
+
     &:focus {
         outline: none;
     }

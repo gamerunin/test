@@ -3,6 +3,13 @@
 
     &__phone {
         @include text-18-bd;
+
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
     }
 
     &__link {

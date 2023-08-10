@@ -38,6 +38,10 @@
         max-width: 148px;
         color: $primary;
         text-decoration: none;
+
+        &:hover {
+            color: lighten($primary, 10%);
+        }
     }
 
     &__info {
