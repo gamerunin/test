@@ -2,18 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    @include media-breakpoint-down(lg) {
-        min-width: 50%;
-    }
-
-    @include media-breakpoint-down(sm) {
-        min-width: 100%;
-    }
-
-    @include media-breakpoint-down(xs) {
-        padding-left: 10%;
-    }
-
     &__title {
         @include text-16-bd;
 
@@ -56,5 +44,17 @@
 
     &--4 {
         min-width: 142px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        min-width: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        min-width: 100%;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding-left: 10%;
     }
 }

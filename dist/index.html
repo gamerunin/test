@@ -1,32 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <!-- Proxima Nova Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-    <!-- Owl.Carousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/index.css">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Proxima Nova Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css"
+        />
+        <!-- Fancybox -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
+        <!-- Owl.Carousel -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"
+        />
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/index.css" />
 
+        <!-- Meta tags -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow, noodp" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="google" content="notranslate" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
 
-    <!-- Meta tags -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow, noodp">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+        <!-- Favicons -->
 
-    <!-- Favicons -->
-
-    <title>HomePage</title>
-</head>
-<body>
+        <title>HomePage</title>
+    </head>
+    <body>
         <!-- header -->
         <header class="header">
             <div class="header__info">
@@ -134,9 +142,14 @@
             <div class="navbar">
                 <div class="container">
                     <div class="navbar__row">
-            
                         <button class="navbar__menu">
-                            <img id="mobile-menu-button" class="navbar__menu-icon" width="24px" height="24px" src="assets/img/menu.svg">
+                            <img
+                                id="mobile-menu-button"
+                                class="navbar__menu-icon"
+                                width="24px"
+                                height="24px"
+                                src="assets/img/menu.svg"
+                            />
                         </button>
             
                         <nav id="nav-menu" class="nav nav--mobile-hidden">
@@ -146,18 +159,40 @@
                             <a class="nav__item" href="#">Текст текст</a>
                             <a class="nav__item" href="#">Текст текст</a>
                             <a class="nav__item" href="#">Текст текст</a>
-                        </nav><!-- /.nav -->
+                        </nav>
+                        <!-- /.nav -->
             
-                        <form id="#navbar-search-form" class="navbar__search" action="/" method="POST">
-                            <button id="#navbar-search-button" class="navbar__search-btn" type="submit">
-                                <img class="navbar__search-icon" width="24px" height="24px" src="assets/img/magnifying-glass.svg">
+                        <form
+                            id="#navbar-search-form"
+                            class="navbar__search"
+                            action="/"
+                            method="POST"
+                        >
+                            <button
+                                id="#navbar-search-button"
+                                class="navbar__search-btn"
+                                type="submit"
+                            >
+                                <img
+                                    class="navbar__search-icon"
+                                    width="24px"
+                                    height="24px"
+                                    src="assets/img/magnifying-glass.svg"
+                                />
                             </button>
-                            <input id="#navbar-search-input" class="navbar__search-input" type="text" name="search-field">
+                            <input
+                                id="#navbar-search-input"
+                                class="navbar__search-input"
+                                type="text"
+                                name="search-field"
+                            />
                         </form>
-            
-                    </div><!-- /.header__row -->
+                    </div>
+                    <!-- /.header__row -->
                 </div>
-            </div><!-- /.header__bottom --></header>
+            </div>
+            <!-- /.header__bottom -->
+        </header>
 
         <!-- content -->
         
@@ -494,187 +529,335 @@
 
         <!-- footer -->
         <footer class="footer">
-           <div class="footer__subscribe">
-              <div class="container">
-                 <div class="footer__inner">
+            <div class="footer__subscribe">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__subscribe-text">
+                            Текст текст текст текст текст текст текст
+                        </div>
         
-                    <div class="footer__subscribe-text">Текст текст текст текст текст текст текст</div>
+                        <span class="divider divider--footer divider--hide"></span>
         
-                    <span class="divider divider--footer divider--hide"></span>
+                        <form class="subscribe-form" action="" method="post">
+                            <input
+                                class="form-input subscribe-form__input"
+                                id="subscribe-form-email"
+                                type="email"
+                                name="user-email-news"
+                                placeholder="Введите свой e-mail"
+                                required
+                            />
+                            <button
+                                class="btn btn--subscribe"
+                                id="subscribe-form-button"
+                                type="submit"
+                            >
+                                Подписаться
+                            </button>
+                        </form>
+                        <!-- /.subscribe-form -->
         
-                    <form class="subscribe-form">
-                       <input class="form-input subscribe-form__input" id="subscribe-form-email" type="email" name="user-email-news" placeholder="Введите свой e-mail" required>
-                       <button class="btn btn--subscribe" id="subscribe-form-button" type="submit">Подписаться</button>
-                    </form><!-- /.subscribe-form -->
+                        <span class="divider divider--footer"></span>
         
-                    <span class="divider divider--footer"></span>
-        
-                    <div class="socials">
-                       <div class="socials__text">Мы в соц сетях:</div>
-                       <div class="socials__links">
-                          <a class="socials__link" href="#" target="_blank"><img width="20px" height="20px" src="assets/img/vk.svg" alt="vk" /></a>
-                          <a class="socials__link" href="#" target="_blank"><img width="20px" height="20px" src="assets/img/facebook.svg" alt="facebook" /></a>
-                          <a class="socials__link" href="#" target="_blank"><img width="20px" height="20px" src="assets/img/instagram.svg" alt="instagram" /></a>
-                       </div>
-                    </div><!-- /.socials -->
-        
-                 </div>
-              </div><!-- /.container --->
-           </div><!-- /.footer__subscribe --->
-        
-           <div class="footer__nav">
-              <div class="container">
-                 <div class="footer__inner footer__inner--top">
-        
-                    <div class="footer__column footer__column--first">
-                       <div class="logo logo--lg logo--footer">
-                          <img width="200px" height="92px" src="assets/img/vimeo.png" alt="vimeo">
-                       </div>
-                       <div class="logo logo--md logo--footer">
-                          <img width="150px" height="69px" src="assets/img/vimeo.png" alt="vimeo">
-                       </div>
-                       <div class="logo logo--sm logo--footer">
-                          <img width="100px" height="46px" src="assets/img/vimeo.png" alt="vimeo">
-                       </div><!-- /.logo -->
-        
-                       <ul class="contacts">
-                          <li class="contacts__item">
-                             <img src="assets/img/phone-call.svg" width="16px" height="16px" alt="phone">
-                             <span class="contacts__item-text" href="">+7 (800) 111-111-1</span>
-                          </li>
-                          <li class="contacts__item">
-                             <img src="assets/img/at.svg" width="16px" height="16px" alt="email">
-                             <span class="contacts__item-text" href="">info@vimeo.ru</span></li>
-                          <li class="contacts__item">
-                             <img src="assets/img/questions-circular-button.svg" width="16px" height="16px" alt="question">
-                             <a class="contacts__item-text" href="">Задать вопрос</a>
-                          </li>
-                          <li class="contacts__item">
-                             <img src="assets/img/speech-bubble.svg" width="16px" height="16px" alt="feedback">
-                             <a class="contacts__item-text" href="">Оставить отзыв</a>
-                          </li>
-                       </ul>
-        
-                       <span class="divider divider--horizontal"></span>
-        
-                       <div class="footer__info">
-                          текст текст текст текст текст текст текст текст текст текст текст текст текст
-                       </div>
+                        <div class="socials">
+                            <div class="socials__text">Мы в соц сетях:</div>
+                            <div class="socials__links">
+                                <a class="socials__link" href="#" target="_blank"
+                                    ><img
+                                        width="20px"
+                                        height="20px"
+                                        src="assets/img/vk.svg"
+                                        alt="vk"
+                                /></a>
+                                <a class="socials__link" href="#" target="_blank"
+                                    ><img
+                                        width="20px"
+                                        height="20px"
+                                        src="assets/img/facebook.svg"
+                                        alt="facebook"
+                                /></a>
+                                <a class="socials__link" href="#" target="_blank"
+                                    ><img
+                                        width="20px"
+                                        height="20px"
+                                        src="assets/img/instagram.svg"
+                                        alt="instagram"
+                                /></a>
+                            </div>
+                        </div>
+                        <!-- /.socials -->
                     </div>
+                </div>
+                <!-- /.container --->
+            </div>
+            <!-- /.footer__subscribe --->
         
-                    <span class="divider divider--footer-nav"></span>
+            <div class="footer__nav">
+                <div class="container">
+                    <div class="footer__inner footer__inner--top">
+                        <div class="footer__column footer__column--first">
+                            <div class="logo logo--lg logo--footer">
+                                <img
+                                    width="200px"
+                                    height="92px"
+                                    src="assets/img/vimeo.png"
+                                    alt="vimeo"
+                                />
+                            </div>
+                            <div class="logo logo--md logo--footer">
+                                <img
+                                    width="150px"
+                                    height="69px"
+                                    src="assets/img/vimeo.png"
+                                    alt="vimeo"
+                                />
+                            </div>
+                            <div class="logo logo--sm logo--footer">
+                                <img
+                                    width="100px"
+                                    height="46px"
+                                    src="assets/img/vimeo.png"
+                                    alt="vimeo"
+                                />
+                            </div>
+                            <!-- /.logo -->
         
-                    <div class="footer__nav-list">
-                       <div class="nav-column nav-column--1">
-                          <div class="nav-column__title">Заголовок</div>
-                          <nav class="nav-column__items">
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Названиеназвание</a>
-                          </nav>
-                       </div>
+                            <ul class="contacts">
+                                <li class="contacts__item">
+                                    <img
+                                        src="assets/img/phone-call.svg"
+                                        width="16px"
+                                        height="16px"
+                                        alt="phone"
+                                    />
+                                    <span class="contacts__item-text" href=""
+                                        >+7 (800) 111-111-1</span
+                                    >
+                                </li>
+                                <li class="contacts__item">
+                                    <img
+                                        src="assets/img/at.svg"
+                                        width="16px"
+                                        height="16px"
+                                        alt="email"
+                                    />
+                                    <span class="contacts__item-text" href=""
+                                        >info@vimeo.ru</span
+                                    >
+                                </li>
+                                <li class="contacts__item">
+                                    <img
+                                        src="assets/img/questions-circular-button.svg"
+                                        width="16px"
+                                        height="16px"
+                                        alt="question"
+                                    />
+                                    <a class="contacts__item-text" href=""
+                                        >Задать вопрос</a
+                                    >
+                                </li>
+                                <li class="contacts__item">
+                                    <img
+                                        src="assets/img/speech-bubble.svg"
+                                        width="16px"
+                                        height="16px"
+                                        alt="feedback"
+                                    />
+                                    <a class="contacts__item-text" href=""
+                                        >Оставить отзыв</a
+                                    >
+                                </li>
+                            </ul>
         
-                       <div class="nav-column nav-column--2">
-                          <div class="nav-column__title">Заголовок</div>
-                          <nav class="nav-column__items">
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Названиеназвание</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Названиеназвание</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                          </nav>
-                       </div>
+                            <span class="divider divider--horizontal"></span>
         
-                       <div class="nav-column nav-column--3">
-                          <div class="nav-column__title">Заголовок Заголовок</div>
-                          <nav class="nav-column__items">
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Названиеназвание</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                          </nav>
-                       </div>
+                            <div class="footer__info">
+                                текст текст текст текст текст текст текст текст текст
+                                текст текст текст текст
+                            </div>
+                        </div>
         
-                       <div class="nav-column nav-column--4">
-                          <div class="nav-column__title">Заголовок</div>
-                          <nav class="nav-column__items">
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                             <a class="nav-column__item" href="#">Название</a>
-                          </nav>
-                       </div>
+                        <span class="divider divider--footer-nav"></span>
+        
+                        <div class="footer__nav-list">
+                            <div class="nav-column nav-column--1">
+                                <div class="nav-column__title">Заголовок</div>
+                                <nav class="nav-column__items">
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Названиеназвание</a
+                                    >
+                                </nav>
+                            </div>
+        
+                            <div class="nav-column nav-column--2">
+                                <div class="nav-column__title">Заголовок</div>
+                                <nav class="nav-column__items">
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Названиеназвание</a
+                                    >
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Названиеназвание</a
+                                    >
+                                    <a class="nav-column__item" href="#">Название</a>
+                                </nav>
+                            </div>
+        
+                            <div class="nav-column nav-column--3">
+                                <div class="nav-column__title">Заголовок Заголовок</div>
+                                <nav class="nav-column__items">
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Названиеназвание</a
+                                    >
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                </nav>
+                            </div>
+        
+                            <div class="nav-column nav-column--4">
+                                <div class="nav-column__title">Заголовок</div>
+                                <nav class="nav-column__items">
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#"
+                                        >Название название</a
+                                    >
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                    <a class="nav-column__item" href="#">Название</a>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.footer__inner --->
+                </div>
+                <!-- /.container --->
+            </div>
+            <!-- /.footer__nav --->
         
-        
-        
-                 </div><!-- /.footer__inner --->
-              </div><!-- /.container --->
-           </div><!-- /.footer__nav --->
-        
-           <div class="footer__copyright">
-              <div class="container">
-        
-                 <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
-                 <span class="footer__copyright-text">© Все права защищены авторским правом</span>
-        
-              </div><!-- /.container --->
-           </div><!-- /.footer__copyright --->
+            <div class="footer__copyright">
+                <div class="container">
+                    <a class="footer__copyright-link" href="#"
+                        >Политика конфиденциальности</a
+                    >
+                    <span class="footer__copyright-text"
+                        >© Все права защищены авторским правом</span
+                    >
+                </div>
+                <!-- /.container --->
+            </div>
+            <!-- /.footer__copyright --->
         </footer>
+
         <!-- modal -->
         <!-- Modal -->
-        <div class="modal fade" id="request-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+            class="modal fade"
+            id="request-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content modal__content">
+                <div class="modal-content modal__content">
+                    <button
+                        type="button"
+                        class="modal__close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span class="modal__close-icon" aria-hidden="true"
+                            >&times;</span
+                        >
+                    </button>
         
-                 <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-                   <span class="modal__close-icon" aria-hidden="true">&times;</span>
-                 </button>
+                    <div class="modal__title">Записаться на проверку зрения</div>
         
-                <div class="modal__title">
-                    Записаться на проверку зрения
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <input
+                                type="email"
+                                class="form-input"
+                                name="user-email"
+                                placeholder="Ваш е-майл"
+                                required
+                            />
+                        </div>
+                        <div class="form__group">
+                            <input
+                                type="tel"
+                                class="form-input"
+                                name="user-phone"
+                                placeholder="Ваш телефон"
+                                required
+                            />
+                        </div>
+                        <div class="form__group form__group--center">
+                            <input
+                                class="form__group-checkbox"
+                                type="checkbox"
+                                name="user-news"
+                                id="checkbox-news"
+                            />
+                            <label class="form__group-label" for="checkbox-news"
+                                >Я хочу получать информацию о новостях и акциях
+                                компании</label
+                            >
+                        </div>
+                        <div class="form__group form__group--center">
+                            <button type="submit" class="btn btn--subscribe">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
                 </div>
-        
-                <form class="form" action="/" method="post">
-                    <div class="form__group">
-                        <input type="email" class="form-input" name="user-email" placeholder="Ваш е-майл" required>
-                    </div>
-                    <div class="form__group">
-                        <input type="tel" class="form-input" name="user-phone" placeholder="Ваш телефон" required>
-                    </div>
-                    <div class="form__group form__group--center">
-                        <input class="form__group-checkbox" type="checkbox" name="user-news" id="checkbox-news">
-                        <label class="form__group-label" for="checkbox-news">Я хочу получать информацию о новостях и акциях компании</label>
-                    </div>
-                    <div class="form__group form__group--center">
-                        <button type="submit" class="btn btn--subscribe">Отправить</button>
-                    </div>
-                </form>
-        
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <!-- Fancybox -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <!-- Owl.Carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
-    <!-- Scripts -->
-    <script src="assets/js/index.js"></script>
-</body>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- JQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"
+        ></script>
+        <!-- Fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <!-- Owl.Carousel -->
+        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+        <!-- Scripts -->
+        <script src="assets/js/index.js"></script>
+    </body>
 </html>

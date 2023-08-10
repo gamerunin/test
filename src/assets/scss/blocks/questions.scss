@@ -47,6 +47,10 @@
         @include media-breakpoint-down(xs) {
             max-width: 285px;
         }
+
+        @media (max-width: 350px) {
+            max-width: 265px;
+        }
     }
 
     &__item-img {
@@ -81,6 +85,10 @@
                 @include media-breakpoint-down(xs) {
                     left: 10px;
                 }
+
+                @media (max-width: 350px) {
+                    left: 0;
+                }
             }
         }
 
@@ -100,6 +108,10 @@
 
                 @include media-breakpoint-down(xs) {
                     left: 10px;
+                }
+
+                @media (max-width: 350px) {
+                    left: 0;
                 }
             }
         }
@@ -121,6 +133,10 @@
 
                 @include media-breakpoint-down(xs) {
                     left: 40px;
+                }
+
+                @media (max-width: 350px) {
+                    left: 32px;
                 }
             }
         }

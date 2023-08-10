@@ -18,5 +18,9 @@
         @include media-breakpoint-down(xs) {
             margin-bottom: 10px;
         }
+
+        @media (max-width: 350px) {
+            padding: 14px 12px;
+        }
     }
 }

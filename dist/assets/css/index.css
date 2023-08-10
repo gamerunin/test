@@ -1680,15 +1680,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-@media (max-width: 1199.98px) {
-    .nav-column {
-      min-width: 50%; } }
-@media (max-width: 767.98px) {
-    .nav-column {
-      min-width: 100%; } }
-@media (max-width: 575.98px) {
-    .nav-column {
-      padding-left: 10%; } }
 .nav-column__title {
     color: #37454a;
     font-weight: 700;
@@ -1730,6 +1721,15 @@ body {
     min-width: 223px; }
 .nav-column--4 {
     min-width: 142px; }
+@media (max-width: 1199.98px) {
+    .nav-column {
+      min-width: 50%; } }
+@media (max-width: 767.98px) {
+    .nav-column {
+      min-width: 100%; } }
+@media (max-width: 575.98px) {
+    .nav-column {
+      padding-left: 10%; } }
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1994,6 +1994,9 @@ body {
 @media (max-width: 575.98px) {
       .questions__item-inner {
         max-width: 285px; } }
+@media (max-width: 350px) {
+      .questions__item-inner {
+        max-width: 265px; } }
 .questions__item-img {
     padding-top: 10px;
     text-align: center;
@@ -2019,6 +2022,9 @@ body {
 @media (max-width: 575.98px) {
         .questions__item-img--item1::after {
           left: 10px; } }
+@media (max-width: 350px) {
+        .questions__item-img--item1::after {
+          left: 0; } }
 .questions__item-img--item2::after {
       top: 24px;
       height: 155px;
@@ -2032,6 +2038,9 @@ body {
 @media (max-width: 575.98px) {
         .questions__item-img--item2::after {
           left: 10px; } }
+@media (max-width: 350px) {
+        .questions__item-img--item2::after {
+          left: 0; } }
 .questions__item-img--item3::after {
       top: -20px;
       left: 87px;
@@ -2046,6 +2055,9 @@ body {
 @media (max-width: 575.98px) {
         .questions__item-img--item3::after {
           left: 40px; } }
+@media (max-width: 350px) {
+        .questions__item-img--item3::after {
+          left: 32px; } }
 .questions__item-block {
     padding: 25px; }
 .questions__item-title {
@@ -2483,9 +2495,6 @@ body {
   padding: 14px 30px;
   border: 1px solid #76b926;
   border-radius: 26px; }
-@media (max-width: 350px) {
-    .form-input {
-      padding: 14px 12px; } }
 .form-input:focus {
     outline: none; }
 .form-input::-webkit-input-placeholder {
@@ -2626,3 +2635,6 @@ body {
 @media (max-width: 575.98px) {
     .subscribe-form__input {
       margin-bottom: 10px; } }
+@media (max-width: 350px) {
+    .subscribe-form__input {
+      padding: 14px 12px; } }
