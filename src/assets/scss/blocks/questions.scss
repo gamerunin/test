@@ -72,7 +72,7 @@
             &::after {
                 top: -7px;
                 height: 186px;
-                background: url('/../assets/img/circle1.svg') no-repeat;
+                background: url('../img/circle1.svg') no-repeat;
 
                 @include media-breakpoint-down(lg) {
                     left: 10px;
@@ -96,7 +96,7 @@
             &::after {
                 top: 24px;
                 height: 155px;
-                background: url('/../assets/img/circle2.svg') no-repeat;
+                background: url('../img/circle2.svg') no-repeat;
 
                 @include media-breakpoint-down(lg) {
                     left: 10px;
@@ -121,7 +121,7 @@
                 top: -22px;
                 left: 87px;
                 height: 199px;
-                background: url('/../assets/img/circle3.svg') no-repeat;
+                background: url('../img/circle3.svg') no-repeat;
 
                 @include media-breakpoint-down(lg) {
                     left: 40px;
