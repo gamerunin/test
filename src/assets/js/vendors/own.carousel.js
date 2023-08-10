@@ -9,7 +9,7 @@ $(document).ready(function () {
         margin: 10,
         items: 3,
         responsiveClass: true,
-        // autoplay: true,
+        autoplay: true,
         autoPlayTimeout: 5000,
         autoplayHoverPause: true,
         responsive: {
