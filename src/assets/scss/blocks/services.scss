@@ -5,6 +5,8 @@
 
     &__title {
         @include text-h3;
+
+        margin-top: 0;
     }
 
     &__list {

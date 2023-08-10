@@ -759,23 +759,30 @@ $(document).ready(function () {
 /** Blocks */
 $(document).ready(function () {
   // Обработка клика на кнопку "Подписаться"
-  var subscribeButton = $("#subscribe-form-button");
+  var subscribeButton = $('#subscribe-form-button');
   subscribeButton.click(function (event) {
     event.preventDefault();
-    var email = $("#subscribe-form-email").val();
+    var email = $('#subscribe-form-email').val();
     if (!(email !== null && email !== void 0 && email.trim())) return;
+
+    // Проверка на корректный формат email-адреса
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!email || !emailPattern.test(email)) {
+      alert('Пожалуйста, введите корректный email-адрес');
+      return;
+    }
     $.ajax({
-      type: "GET",
-      url: "subscribe.json",
+      type: 'GET',
+      url: 'subscribe.json',
       data: {
         email: email
       },
-      dataType: "json",
+      dataType: 'json',
       success: function success(data) {
-        subscribeButton.text(data.message).addClass("btn--complete").prop("disabled", true);
+        subscribeButton.text(data.message).addClass('btn--complete').prop('disabled', true);
       },
       error: function error() {
-        alert("Сервер не доступен! Попробуйте позже");
+        alert('Сервер не доступен! Попробуйте позже');
       }
     });
   });

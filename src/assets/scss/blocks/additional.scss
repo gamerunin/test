@@ -3,6 +3,17 @@
 
     &__title {
         @include text-h3;
+
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+    }
+
+    &__list {
+        margin: 0;
     }
 
     &__block {
