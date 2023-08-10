@@ -1,30 +1,29 @@
 .contacts {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    @include text-16-reg;
 
-  @include text-16-reg();
-  text-decoration: none;
-}
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 
-.contacts__item {
-  display: flex;
-  align-items: center;
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
 
-  margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+        @include media-breakpoint-down(xs) {
+            justify-content: center;
+        }
+    }
 
-  @include media-breakpoint-down(xs) {
-    justify-content: center;
-  }
-}
+    &__item-text {
+        @include text-16-reg;
 
-.contacts__item-text {
-  margin-left: 14px;
-
-  @include text-16-reg();
-  color: $text-60;
+        margin-left: 14px;
+        color: $text-60;
+    }
 }

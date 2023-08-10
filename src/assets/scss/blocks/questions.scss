@@ -1,114 +1,113 @@
 .questions {
-  padding-top: 22px;
+    padding-top: 22px;
+    background-color: $bg-light-grey;
 
-  background-color: $bg-light-grey;
-}
-
-.questions__title {
-  @include text-h3();
-}
-
-.questions__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.questions__item {
-  position: relative;
-  width: 370px;
-  min-height: 331px;
-  overflow: hidden;
-
-  background-color: $white;
-  border-radius: 8px;
-  box-shadow: $small-shadow;
-
-  @include media-breakpoint-down(lg) {
-    width: 300px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    margin: 0 auto;
-  }
-}
-
-.questions .questions__item-img img {
-  display: initial;
-  width: auto;
-  margin-bottom: -5px;
-}
-
-.questions__item-img {
-  padding-top: 10px;
-
-  background-color: $bg-box-grey;
-  text-align: center;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 50px;
-    width: 265px;
-    display: inline-block;
-    height: 186px;
-  }
-
-  &--item1 {
-    &:after {
-      background: url("/../assets/img/circle1.svg") no-repeat;
-      top: -7px;
-      height: 186px;
-
-      @include media-breakpoint-down(lg) {
-        left: 16px;
-      }
+    &__title {
+        @include text-h3;
     }
-  }
-  &--item2 {
-    &:after {
-      background: url("/../assets/img/circle2.svg") no-repeat;
-      top: 24px;
-      height: 155px;
 
-      @include media-breakpoint-down(lg) {
-        left: 16px;
-      }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-  }
-  &--item3 {
-    &:after {
-      background: url("/../assets/img/circle3.svg") no-repeat;
-      top: -20px;
-      left: 87px;
-      height: 199px;
 
-      @include media-breakpoint-down(lg) {
-        left: 50px;
-      }
+    &__item {
+        position: relative;
+        width: 370px;
+        min-height: 331px;
+        overflow: hidden;
+        background-color: $white;
+        border-radius: 8px;
+        box-shadow: $small-shadow;
+
+        @include media-breakpoint-down(lg) {
+            width: 300px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin: 0 auto;
+        }
     }
-  }
-}
 
-.questions__item-block {
-  padding: 25px;
-}
+    &__item-img {
+        padding-top: 10px;
+        text-align: center;
+        background-color: $bg-box-grey;
 
-.questions__item-title {
-  @include text-20-bd();
-}
+        &::after {
+            position: absolute;
+            top: 27px;
+            left: 50px;
+            display: inline-block;
+            width: 265px;
+            height: 186px;
+            content: '';
+        }
 
-.questions__item-text {
-  margin-top: 15px;
+        &--item1 {
+            &::after {
+                top: -7px;
+                height: 186px;
+                background: url('/../assets/img/circle1.svg') no-repeat;
 
-  @include text-16-reg();
-}
+                @include media-breakpoint-down(lg) {
+                    left: 16px;
+                }
+            }
+        }
 
-.questions__info {
-  padding-bottom: 60px;
-  margin-top: 20px;
+        &--item2 {
+            &::after {
+                top: 24px;
+                height: 155px;
+                background: url('/../assets/img/circle2.svg') no-repeat;
 
-  @include text-16-reg();
-  color: $text-60;
+                @include media-breakpoint-down(lg) {
+                    left: 16px;
+                }
+            }
+        }
+
+        &--item3 {
+            &::after {
+                top: -20px;
+                left: 87px;
+                height: 199px;
+                background: url('/../assets/img/circle3.svg') no-repeat;
+
+                @include media-breakpoint-down(lg) {
+                    left: 50px;
+                }
+            }
+        }
+    }
+
+    &__item-block {
+        padding: 25px;
+    }
+
+    &__item-title {
+        @include text-20-bd;
+    }
+
+    &__item-text {
+        @include text-16-reg;
+
+        margin-top: 15px;
+    }
+
+    &__info {
+        @include text-16-reg;
+
+        margin-top: 20px;
+        padding-bottom: 60px;
+        color: $text-60;
+    }
+
+    & &__item-img img {
+        display: initial;
+        width: auto;
+        margin-bottom: -5px;
+    }
 }

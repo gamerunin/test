@@ -1,19 +1,19 @@
 .contact {
-  text-align: right;
+    text-align: right;
 
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-}
+    &__phone {
+        @include text-18-bd;
+    }
 
-.contact__phone {
-  @include text-18-bd();
-}
+    &__link {
+        @include text-14-reg;
 
-.contact__link {
-  border-bottom: 1px dashed $primary;
+        color: $primary;
+        text-decoration: none;
+        border-bottom: 1px dashed $primary;
+    }
 
-  @include text-14-reg();
-  text-decoration: none;
-  color: $primary;
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }

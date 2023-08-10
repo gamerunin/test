@@ -1,18 +1,18 @@
-.header__info {
-  height: 92px;
-  overflow: hidden;
+.header {
+    &__row {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0;
 
-  background-color: $white;
-}
+        @include media-breakpoint-down(xs) {
+            justify-content: space-between;
+        }
+    }
 
-.header__row {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  margin: 0;
-
-  @include media-breakpoint-down(xs) {
-    justify-content: space-between;
-  }
+    &__info {
+        height: 92px;
+        overflow: hidden;
+        background-color: $white;
+    }
 }

@@ -1,56 +1,94 @@
 .information {
-  padding-top: 60px;
-  margin-bottom: 55px;
+    margin-bottom: 55px;
+    padding-top: 60px;
+    text-align: center;
 
-  text-align: center;
-}
+    &__title {
+        @include text-h3;
 
-.information__title {
-  margin: 0;
-  padding: 30px;
+        margin: 0;
+        padding: 30px;
 
-  @include text-h3();
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+        }
+    }
 
-  @include media-breakpoint-down(xs) {
-    font-size: 24px;
-  }
+    &__list {
+        padding: 0 30px;
+    }
 
-}
+    &__item {
+        @include text-18-reg;
+    }
 
-.information__list {
-  padding: 0 30px 0 30px;
-}
+    &__info {
+        @include text-18-reg;
 
-.information__item {
-  @include text-18-reg();
-}
+        margin-top: 20px;
+        padding: 0 30px;
+    }
 
-.information__info {
-  margin-top: 20px;
-  padding: 0 30px 0 30px;
+    &__block {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        text-align: left;
+        background-color: $bg-light-grey;
+        border-radius: 20px;
 
-  @include text-18-reg();
-}
+        @include media-breakpoint-down(lg) {
+            border: 1px solid $stroke;
+        }
+    }
 
-.information__block {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  border-radius: 20px;
-  border: 1px solid $stroke;
-  text-align: left;
+    &__block-text {
+        padding-bottom: 20px;
 
-  background-color: $bg-light-grey;
-}
+        @include media-breakpoint-only(xl) {
+            min-height: 522px;
+            padding-right: 480px;
+            border: 1px solid $stroke;
+            border-radius: 20px 0 0 20px;
+        }
+    }
 
-.information__block-text {
-  padding-bottom: 20px;
-}
+    &__block-img {
+        float: right;
 
-.information__img {
-  height: 100%;
+        @include media-breakpoint-only(xl) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
 
-  @include media-breakpoint-down(lg) {
-    display: none;
-  }
+        @include media-breakpoint-down(lg) {
+            margin: 10px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            display: flex;
+            justify-content: center;
+            float: none;
+            margin-top: 30px;
+        }
+    }
+
+    &__img {
+        display: none;
+
+        &--xl {
+            @include media-breakpoint-only(xl) {
+                display: block;
+            }
+        }
+
+        &--lg {
+            @include media-breakpoint-down(lg) {
+                display: block;
+                border-radius: 10px;
+            }
+        }
+    }
 }

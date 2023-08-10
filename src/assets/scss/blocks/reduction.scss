@@ -1,38 +1,36 @@
 .reduction {
-  width: 21%;
+    width: 21%;
 
-  @include media-breakpoint-down(lg) {
-    width: 18%;
-  }
+    @include media-breakpoint-down(lg) {
+        width: 18%;
+    }
 
-  @include media-breakpoint-down(md) {
-    display: none;
-  }
-}
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
 
-.reduction__icon {
-  display: inline-block;
+    &__icon {
+        display: inline-block;
 
-  @include media-breakpoint-down(lg) {
-    display: none;
-  }
-}
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
 
-.reduction__title {
-  white-space: nowrap;
+    &__title {
+        @include text-16-bd;
 
-  @include text-16-bd();
-  color: $primary;
-  line-height: normal;
+        color: $primary;
+        line-height: normal;
+        white-space: nowrap;
+        transition: color 0.1s linear;
+    }
 
-  transition: color .1s linear;
-}
+    &__subtitle {
+        @include text-14-light;
 
-.reduction__subtitle {
-  white-space: nowrap;
-
-  @include text-14-light();
-  color: $primary;
-
-  transition: color .1s linear;
+        color: $primary;
+        white-space: nowrap;
+        transition: color 0.1s linear;
+    }
 }

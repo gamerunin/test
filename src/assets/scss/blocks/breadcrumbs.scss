@@ -1,32 +1,31 @@
 .breadcrumbs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  padding: 20px 0 20px;
-  list-style: none;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
 
-.breadcrumbs__item {
-  display: flex;
-  align-items: center;
+    &__item {
+        @include text-16-reg;
 
-  @include text-16-reg();
-  color: $text-60;
+        display: flex;
+        align-items: center;
+        color: $text-60;
 
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 6.25px;
-    height: 10px;
-    margin: 0 8px;
+        &::after {
+            display: inline-block;
+            width: 6.25px;
+            height: 10px;
+            margin: 0 8px;
+            background: url('../img/arrow.svg');
+            content: '';
+        }
 
-    background: url("../img/arrow.svg");
-  }
-
-  &:last-child {
-    &:after {
-      display: none;
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
     }
-  }
 }

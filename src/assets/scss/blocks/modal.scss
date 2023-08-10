@@ -1,28 +1,28 @@
-.modal__content {
-    width: 100%;
-    padding: 30px;
-    position: relative;
+.modal {
+    &__content {
+        position: relative;
+        width: 100%;
+        padding: 30px;
+        background-color: $white;
+    }
 
-    background-color: $white;
-}
+    &__close {
+        position: absolute;
+        top: 12px;
+        right: 6px;
+        z-index: 1;
+        width: 35px;
+        padding: 0;
+        font-size: 22px;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
 
-.modal__close {
-    position: absolute;
-    top: 12px;
-    font-size: 22px;
-    right: 6px;
-    z-index: 1;
+    &__title {
+        @include text-20-bd;
 
-    width: 35px;
-    padding: 0;
-    border: 0;
-
-    background: none;
-    cursor: pointer;
-}
-
-.modal__title {
-   @include text-20-bd();
-    color: $primary;
-    text-align: center;
+        color: $primary;
+        text-align: center;
+    }
 }

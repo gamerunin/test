@@ -1,46 +1,48 @@
 .salons {
-  width: 25%;
+    width: 25%;
 
-  @include media-breakpoint-down(lg) {
-    width: 29%;
-  }
+    @include media-breakpoint-down(lg) {
+        width: 29%;
+    }
 
-  @include media-breakpoint-down(md) {
-    width: 36%;
-  }
+    @include media-breakpoint-down(md) {
+        width: 36%;
+    }
 
-  @include media-breakpoint-down(sm) {
-    width: 43%;
-  }
+    @include media-breakpoint-down(sm) {
+        width: 43%;
+    }
 
-  @include media-breakpoint-down(xs) {
-    display: none;
-  }
-}
+    @include media-breakpoint-down(xs) {
+        display: none;
+    }
 
-.salons__block {
-  display: flex;
-  align-items: center;
-}
+    &__block {
+        display: flex;
+        align-items: center;
+    }
 
-.salons__icon {
-  margin-right: 10px;
-}
+    &__icon {
+        margin-right: 10px;
+    }
 
-.salons__title {
-  @include text-16-bd();
-  text-transform: uppercase;
-}
+    &__title {
+        @include text-16-bd;
 
-.salons__city {
-  max-width: 148px;
+        text-transform: uppercase;
+    }
 
-  @include text-16-bd();
-  text-decoration: none;
-  color: $primary;
-}
+    &__city {
+        @include text-16-bd;
 
-.salons__info {
-  @include text-16-reg();
-  color: $text-60;
+        max-width: 148px;
+        color: $primary;
+        text-decoration: none;
+    }
+
+    &__info {
+        @include text-16-reg;
+
+        color: $text-60;
+    }
 }

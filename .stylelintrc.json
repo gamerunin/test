@@ -1,0 +1,48 @@
+{
+    "overrides": [
+        {
+            "files": ["*.scss", "**/*.scss"],
+            "customSyntax": "postcss-scss",
+            "extends": [
+                "stylelint-prettier/recommended",
+                "stylelint-config-standard-scss",
+                "stylelint-config-rational-order"
+            ],
+            "plugins": [
+                "stylelint-prettier",
+                "stylelint-order",
+                "stylelint-scss"
+            ],
+            "rules": {
+                "scss/no-global-function-names": null,
+                "media-feature-range-notation": null,
+                "color-function-notation": null,
+                "alpha-value-notation": null,
+                "at-rule-no-unknown": null,
+                "order/order": [
+                    "declarations",
+                    {
+                        "type": "at-rule",
+                        "name": "media"
+                    },
+                    {
+                        "type": "rule",
+                        "selector": "^&::(before|after)"
+                    },
+                    {
+                        "type": "rule",
+                        "selector": "^&:\\w"
+                    },
+                    {
+                        "type": "rule",
+                        "selector": "^&_"
+                    },
+                    {
+                        "type": "rule",
+                        "selector": "^."
+                    }
+                ]
+            }
+        }
+    ]
+}

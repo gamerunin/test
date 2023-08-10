@@ -1,20 +1,20 @@
 .additional {
-  padding-bottom: 60px;
-}
+    padding-bottom: 60px;
 
-.additional__title {
-  @include text-h3();
-}
+    &__title {
+        @include text-h3;
+    }
 
-.additional__block {
-  display: flex;
-  justify-content: space-between;
+    &__block {
+        display: flex;
+        justify-content: space-between;
 
-  @include media-breakpoint-down(md) {
-    flex-direction: column-reverse;
-  }
-}
+        @include media-breakpoint-down(md) {
+            flex-direction: column-reverse;
+        }
+    }
 
-.additional__item {
-  @include text-18-reg();
+    &__item {
+        @include text-18-reg;
+    }
 }

@@ -1,31 +1,31 @@
 .form {
-  margin-top: 15px;
-}
+    margin-top: 15px;
 
-.form__group {
-  display: flex;
-  align-items: start;
-  margin-top: 15px;
-  margin-bottom: 15px;
+    &__group {
+        display: flex;
+        align-items: start;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
-  &--center {
-    justify-content: center;
-  }
-}
+        &--center {
+            justify-content: center;
+        }
+    }
 
-.form__group-checkbox {
-  accent-color: #649f27;
-  color: white;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-}
+    &__group-checkbox {
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        color: white;
+        accent-color: #649f27;
+    }
 
-.form__group-label {
-  margin-left: 10px;
-  max-width: 80%;
+    &__group-label {
+        @include text-14-reg;
 
-  @include text-14-reg();
-  color: $text-60;
+        max-width: 80%;
+        margin-left: 10px;
+        color: $text-60;
+    }
 }

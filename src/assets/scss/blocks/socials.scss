@@ -1,71 +1,69 @@
 .socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-  @include media-breakpoint-down(sm) {
-    position: absolute;
-    top: 77px;
-    left: 42%;
-  }
+    @include media-breakpoint-down(sm) {
+        position: absolute;
+        top: 77px;
+        left: 42%;
+    }
 
-  @include media-breakpoint-down(xs) {
-    top: 8px;
-    left: auto;
-    right: 14px;
-  }
+    @include media-breakpoint-down(xs) {
+        top: 8px;
+        right: 14px;
+        left: auto;
+    }
 
-  @media (max-width: 431px) {
-    display: none;
-  }
-}
+    @media (max-width: 431px) {
+        display: none;
+    }
 
-.socials__text {
-  max-width: 86px;
-  margin-right: 28px;
+    &__text {
+        @include text-16-bd;
 
-  @include text-16-bd();
-  text-transform: uppercase;
+        max-width: 86px;
+        margin-right: 28px;
+        text-transform: uppercase;
 
-  @include media-breakpoint-down(lg) {
-    display: none;
-  }
-}
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
 
-.socials__links {
-  display: flex;
+    &__links {
+        display: flex;
 
-  @include media-breakpoint-down(xs) {
-    flex-direction: column;
-  }
-}
+        @include media-breakpoint-down(xs) {
+            flex-direction: column;
+        }
+    }
 
-.socials__link {
-  display: flex;
-  margin-right: 15px;
-  padding: 20px;
-  border-radius: 50px;
+    &__link {
+        display: flex;
+        margin-right: 15px;
+        padding: 20px;
+        line-height: 60px;
+        background-color: $bg-light-grey;
+        border-radius: 50px;
+        transition: background-color 0.1s linear;
 
-  line-height: 60px;
-  background-color: $bg-light-grey;
+        @include media-breakpoint-down(md) {
+            margin-right: 5px;
+            padding: 8px;
+        }
 
-  transition: background-color .1s linear;
+        @include media-breakpoint-down(xs) {
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
 
-  &:last-child {
-    margin-right: 0;
-  }
+        &:last-child {
+            margin-right: 0;
+        }
 
-  &:hover {
-    background-color: darken($bg-light-grey, 5%);
-  }
-
-  @include media-breakpoint-down(md) {
-    padding: 8px;
-    margin-right: 5px;
-  }
-
-  @include media-breakpoint-down(xs) {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
+        &:hover {
+            background-color: darken($bg-light-grey, 5%);
+        }
+    }
 }

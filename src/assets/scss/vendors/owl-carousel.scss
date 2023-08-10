@@ -1,10 +1,11 @@
-// Own Carousel Custom Styles
+/**
+ * Own Carousel Custom Styles
+ */
 .owl-carousel {
-  opacity: 0;
+    opacity: 0;
+    transition: opacity 0.1s linear;
 
-  transition: opacity .1s linear;
-
-  &.owl-loaded {
-    opacity: 1;
-  }
+    &.owl-loaded {
+        opacity: 1;
+    }
 }

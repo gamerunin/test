@@ -1,22 +1,22 @@
 .subscribe-form {
-  @include media-breakpoint-down(xs) {
-    display: flex;
-    flex-direction: column;
-  }
-}
+    @include media-breakpoint-down(xs) {
+        display: flex;
+        flex-direction: column;
+    }
 
-.subscribe-form__input {
-  max-width: 210px;
-  margin-right: 15px;
+    &__input {
+        max-width: 210px;
+        margin-right: 15px;
 
-  @include media-breakpoint-down(md) {
-    max-width: 194px;
-    margin-right: 5px;
+        @include media-breakpoint-down(md) {
+            @include text-14-bd;
 
-    @include text-14-bd();
-  }
+            max-width: 194px;
+            margin-right: 5px;
+        }
 
-  @include media-breakpoint-down(xs) {
-    margin-bottom: 10px;
-  }
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 10px;
+        }
+    }
 }

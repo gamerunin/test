@@ -1,69 +1,65 @@
 .services {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
 
-  text-align: center;
-}
+    &__title {
+        @include text-h3;
+    }
 
-.services__title {
-  @include text-h3();
-}
+    &__list {
+        display: grid;
+        grid-gap: 30px;
+        grid-row-gap: 72px;
+        grid-template-columns: repeat(3, auto);
+        margin-top: 72px;
+        margin-bottom: 30px;
 
-.services__list {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 30px;
-  grid-row-gap: 72px;
-  margin-top: 72px;
-  margin-bottom: 30px;
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(2, auto);
+        }
 
-  @include media-breakpoint-down(md) {
-    grid-template-columns: repeat(2, auto);
-  }
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
 
-  @include media-breakpoint-down(sm) {
-    grid-template-columns: repeat(1, auto);
-  }
-}
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        min-height: 190px;
+        background-color: $bg-light-grey;
+        border-radius: 15px;
 
-.services__item {
-  position: relative;
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+    }
 
-  display: flex;
-  justify-content: center;
-  width: 370px;
-  min-height: 190px;
-  border-radius: 15px;
+    &__item-icon {
+        position: absolute;
+        top: -42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 84px;
+        height: 84px;
+        background-color: $primary;
+        border: 10px solid $white;
+        border-radius: 50px;
+        box-shadow: $circle-shadow;
+    }
 
-  background-color: $bg-light-grey;
+    &__item-text {
+        @include text-18-bd;
 
-  @include media-breakpoint-down(lg) {
-    width: 100%;
-  }
-}
+        padding: 40px 40px 15px;
+        text-transform: uppercase;
 
-.services__item-icon {
-  position: absolute;
-  top: -42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 84px;
-  height: 84px;
-  border: 10px solid $white;
-  border-radius: 50px;
-
-  box-shadow: $circle-shadow;
-  background-color: $primary;
-}
-
-.services__item-text {
-  padding: 40px 40px 15px 40px;
-
-  @include text-18-bd();
-  text-transform: uppercase;
-
-  &--green {
-    color: $text-green;
-  }
+        &--green {
+            color: $text-green;
+        }
+    }
 }

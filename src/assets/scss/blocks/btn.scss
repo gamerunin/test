@@ -1,105 +1,100 @@
 .btn {
-  position: relative;
+    @include text-14-bd;
 
-  display: inline-flex;
-  align-items: center;
-  padding: 15px 30px;
-  border: 1px solid $primary;
-  border-radius: 26px;
-  text-decoration: none;
-
-  transition: background-color .1s linear, color .1s linear;
-
-  @include text-14-bd();
-  background: $white;
-  cursor: pointer;
-
-
-  &:hover {
-    background: lighten($primary, 50%);
-  }
-
-  &--header {
-    max-width: 214px;
-    height: 52px;
-
-    @include media-breakpoint-down(lg) {
-      text-align: center;
-    }
-  }
-
-  &--white {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    background: $white;
+    border: 1px solid $primary;
     border-radius: 26px;
-
-    line-height: 25px;
-    text-transform: uppercase;
-  }
-
-  &--next {
-    min-width: 332px;
-    height: 70px;
-    border-radius: 35px;
-    padding-right: 72px;
-
-    @include text-16-bd();
-    box-shadow: $btn-shadow;
-    text-transform: uppercase;
-    background: $btn-gradient;
-    color: $white;
-
-    transition: none;
+    cursor: pointer;
+    transition:
+        background-color 0.1s linear,
+        color 0.1s linear;
 
     &:hover {
-      background: lighten($primary, 5%);
-    }
-  }
-
-  &--subscribe {
-    min-width: 157px;
-    height: 52px;
-    justify-content: center;
-
-    @include text-16-bd-lt();
-    background: $btn-gradient;
-    color: $white;
-
-    transition: none;
-
-    &:hover {
-      background: lighten($primary, 5%);
+        background: lighten($primary, 50%);
     }
 
-    @include media-breakpoint-down(md) {
-      @include text-14-bd();
-      color: $white;
+    &__arrow {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        background: $white url('../img/arrow-point-to-right.svg') no-repeat
+            center;
+        background-color: $white;
+        border-radius: 50px;
     }
-  }
 
-  &--complete {
-    background: linear-gradient(90deg, #7b7b7b 0%, #333333 100%);
+    &--header {
+        max-width: 214px;
+        height: 52px;
 
-    &:hover {
-      background: lighten(#333333, 5%);
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
     }
 
-    &:disabled {
-      &:hover {
-        background: linear-gradient(90deg, #7b7b7b 0%, #333333 100%);
-      }
+    &--white {
+        line-height: 25px;
+        text-transform: uppercase;
+        border-radius: 26px;
     }
-  }
-}
 
-.btn__arrow {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    &--next {
+        @include text-16-bd;
 
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+        min-width: 332px;
+        height: 70px;
+        padding-right: 72px;
+        color: $white;
+        text-transform: uppercase;
+        background: $btn-gradient;
+        border-radius: 35px;
+        box-shadow: $btn-shadow;
+        transition: none;
 
-  background-color: $white;
+        &:hover {
+            background: lighten($primary, 5%);
+        }
+    }
 
-  background: $white url("../img/arrow-point-to-right.svg") no-repeat center;
+    &--subscribe {
+        @include text-16-bd-lt;
+
+        justify-content: center;
+        min-width: 157px;
+        height: 52px;
+        color: $white;
+        background: $btn-gradient;
+        transition: none;
+
+        @include media-breakpoint-down(md) {
+            @include text-14-bd;
+
+            color: $white;
+        }
+
+        &:hover {
+            background: lighten($primary, 5%);
+        }
+    }
+
+    &--complete {
+        background: linear-gradient(90deg, #7b7b7b 0%, #333 100%);
+
+        &:hover {
+            background: lighten(#333, 5%);
+        }
+
+        &:disabled {
+            &:hover {
+                background: linear-gradient(90deg, #7b7b7b 0%, #333 100%);
+            }
+        }
+    }
 }
