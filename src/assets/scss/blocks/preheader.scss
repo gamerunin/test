@@ -3,6 +3,10 @@
     min-height: 509px;
     background-color: $bg-light-grey;
 
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 30px;
+    }
+
     @include media-breakpoint-down(xs) {
         padding-bottom: 50px;
     }
@@ -12,8 +16,9 @@
 
         margin: 10px 0;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             font-size: 32px;
+            line-height: 40px;
         }
 
         &--green {
@@ -28,16 +33,49 @@
     }
 
     &__block {
-        display: flex;
-        justify-content: space-between;
+        position: relative;
+        padding-right: 447px;
+
+        @include media-breakpoint-down(md) {
+            display: block;
+            padding-right: 247px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+        }
+    }
+
+    &__block-img {
+        position: absolute;
+        top: -72px;
+        right: 0;
+
+        @include media-breakpoint-down(md) {
+            top: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            position: initial;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__img {
-        margin-top: -62px;
-        margin-left: 46px;
+        display: none;
 
-        @include media-breakpoint-down(md) {
-            display: none;
+        &--lg {
+            @include media-breakpoint-up(lg) {
+                display: block;
+            }
+        }
+
+        &--md {
+            @include media-breakpoint-down(md) {
+                display: block;
+                border-radius: 10px;
+            }
         }
     }
 
